@@ -1,0 +1,16 @@
+{
+  "name": "jw/kakao-pay",
+  "description": "Kakaopay SDK for php",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JW",
+      "email": "hahooh@gamil.com"
+    }
+  ],
+  "require": {
+    "netresearch/jsonmapper": "^1.4",
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}
