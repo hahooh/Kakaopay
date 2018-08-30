@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class CardInfo
-{
+class CardInfo {
     private $purchase_corp;
     private $purchase_corp_code;
     private $issuer_corp;

@@ -6,8 +6,7 @@ use KakaoPay\Entities\Amount;
 use KakaoPay\Entities\CardInfo;
 use KakaoPay\Entities\Status;
 
-class PaymentDetailsResponse
-{
+class PaymentDetailsResponse {
     protected $tid;
     protected $cid;
     protected $status;
@@ -29,8 +28,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getTid()
-    {
+    public function getTid() {
         return $this->tid;
     }
 
@@ -38,8 +36,7 @@ class PaymentDetailsResponse
      * @param mixed $tid
      * @return PaymentDetailsResponse
      */
-    public function setTid($tid): PaymentDetailsResponse
-    {
+    public function setTid($tid): PaymentDetailsResponse {
         $this->tid = $tid;
         return $this;
     }
@@ -47,8 +44,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getCid()
-    {
+    public function getCid() {
         return $this->cid;
     }
 
@@ -56,8 +52,7 @@ class PaymentDetailsResponse
      * @param mixed $cid
      * @return PaymentDetailsResponse
      */
-    public function setCid($cid): PaymentDetailsResponse
-    {
+    public function setCid($cid): PaymentDetailsResponse {
         $this->cid = $cid;
         return $this;
     }
@@ -65,8 +60,7 @@ class PaymentDetailsResponse
     /**
      * @return Status
      */
-    public function getStatus()
-    {
+    public function getStatus() {
         return $this->status;
     }
 
@@ -74,8 +68,7 @@ class PaymentDetailsResponse
      * @param Status $status
      * @return PaymentDetailsResponse
      */
-    public function setStatus($status): PaymentDetailsResponse
-    {
+    public function setStatus($status): PaymentDetailsResponse {
         $this->status = $status;
         return $this;
     }
@@ -83,8 +76,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getPartnerOrderId()
-    {
+    public function getPartnerOrderId() {
         return $this->partner_order_id;
     }
 
@@ -92,8 +84,7 @@ class PaymentDetailsResponse
      * @param mixed $partner_order_id
      * @return PaymentDetailsResponse
      */
-    public function setPartnerOrderId($partner_order_id): PaymentDetailsResponse
-    {
+    public function setPartnerOrderId($partner_order_id): PaymentDetailsResponse {
         $this->partner_order_id = $partner_order_id;
         return $this;
     }
@@ -101,8 +92,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getPartnerUserId()
-    {
+    public function getPartnerUserId() {
         return $this->partner_user_id;
     }
 
@@ -110,8 +100,7 @@ class PaymentDetailsResponse
      * @param mixed $partner_user_id
      * @return PaymentDetailsResponse
      */
-    public function setPartnerUserId($partner_user_id): PaymentDetailsResponse
-    {
+    public function setPartnerUserId($partner_user_id): PaymentDetailsResponse {
         $this->partner_user_id = $partner_user_id;
         return $this;
     }
@@ -119,8 +108,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getPaymentMethodType()
-    {
+    public function getPaymentMethodType() {
         return $this->payment_method_type;
     }
 
@@ -128,8 +116,7 @@ class PaymentDetailsResponse
      * @param mixed $payment_method_type
      * @return PaymentDetailsResponse
      */
-    public function setPaymentMethodType($payment_method_type): PaymentDetailsResponse
-    {
+    public function setPaymentMethodType($payment_method_type): PaymentDetailsResponse {
         $this->payment_method_type = $payment_method_type;
         return $this;
     }
@@ -137,8 +124,7 @@ class PaymentDetailsResponse
     /**
      * @return Amount
      */
-    public function getAmount()
-    {
+    public function getAmount() {
         return $this->amount;
     }
 
@@ -146,8 +132,7 @@ class PaymentDetailsResponse
      * @param Amount $amount
      * @return PaymentDetailsResponse
      */
-    public function setAmount($amount): PaymentDetailsResponse
-    {
+    public function setAmount($amount): PaymentDetailsResponse {
         $this->amount = $amount;
         return $this;
     }
@@ -155,8 +140,7 @@ class PaymentDetailsResponse
     /**
      * @return Amount
      */
-    public function getCanceledAmount()
-    {
+    public function getCanceledAmount() {
         return $this->canceled_amount;
     }
 
@@ -164,8 +148,7 @@ class PaymentDetailsResponse
      * @param Amount $canceled_amount
      * @return PaymentDetailsResponse
      */
-    public function setCanceledAmount($canceled_amount): PaymentDetailsResponse
-    {
+    public function setCanceledAmount($canceled_amount): PaymentDetailsResponse {
         $this->canceled_amount = $canceled_amount;
         return $this;
     }
@@ -173,8 +156,7 @@ class PaymentDetailsResponse
     /**
      * @return Amount
      */
-    public function getCanceledAvailableAmount()
-    {
+    public function getCanceledAvailableAmount() {
         return $this->canceled_available_amount;
     }
 
@@ -182,8 +164,7 @@ class PaymentDetailsResponse
      * @param Amount $canceled_available_amount
      * @return PaymentDetailsResponse
      */
-    public function setCanceledAvailableAmount($canceled_available_amount): PaymentDetailsResponse
-    {
+    public function setCanceledAvailableAmount($canceled_available_amount): PaymentDetailsResponse {
         $this->canceled_available_amount = $canceled_available_amount;
         return $this;
     }
@@ -191,8 +172,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getItemName()
-    {
+    public function getItemName() {
         return $this->item_name;
     }
 
@@ -200,8 +180,7 @@ class PaymentDetailsResponse
      * @param mixed $item_name
      * @return PaymentDetailsResponse
      */
-    public function setItemName($item_name): PaymentDetailsResponse
-    {
+    public function setItemName($item_name): PaymentDetailsResponse {
         $this->item_name = $item_name;
         return $this;
     }
@@ -209,8 +188,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getItemCode()
-    {
+    public function getItemCode() {
         return $this->item_code;
     }
 
@@ -218,8 +196,7 @@ class PaymentDetailsResponse
      * @param mixed $item_code
      * @return PaymentDetailsResponse
      */
-    public function setItemCode($item_code): PaymentDetailsResponse
-    {
+    public function setItemCode($item_code): PaymentDetailsResponse {
         $this->item_code = $item_code;
         return $this;
     }
@@ -227,8 +204,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getQuantity()
-    {
+    public function getQuantity() {
         return $this->quantity;
     }
 
@@ -236,8 +212,7 @@ class PaymentDetailsResponse
      * @param mixed $quantity
      * @return PaymentDetailsResponse
      */
-    public function setQuantity($quantity): PaymentDetailsResponse
-    {
+    public function setQuantity($quantity): PaymentDetailsResponse {
         $this->quantity = $quantity;
         return $this;
     }
@@ -245,8 +220,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getCreatedAt()
-    {
+    public function getCreatedAt() {
         return $this->created_at;
     }
 
@@ -254,8 +228,7 @@ class PaymentDetailsResponse
      * @param mixed $created_at
      * @return PaymentDetailsResponse
      */
-    public function setCreatedAt($created_at): PaymentDetailsResponse
-    {
+    public function setCreatedAt($created_at): PaymentDetailsResponse {
         $this->created_at = $created_at;
         return $this;
     }
@@ -263,8 +236,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getApprovedAt()
-    {
+    public function getApprovedAt() {
         return $this->approved_at;
     }
 
@@ -272,8 +244,7 @@ class PaymentDetailsResponse
      * @param mixed $approved_at
      * @return PaymentDetailsResponse
      */
-    public function setApprovedAt($approved_at): PaymentDetailsResponse
-    {
+    public function setApprovedAt($approved_at): PaymentDetailsResponse {
         $this->approved_at = $approved_at;
         return $this;
     }
@@ -281,8 +252,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getCanceledAt()
-    {
+    public function getCanceledAt() {
         return $this->canceled_at;
     }
 
@@ -290,8 +260,7 @@ class PaymentDetailsResponse
      * @param mixed $canceled_at
      * @return PaymentDetailsResponse
      */
-    public function setCanceledAt($canceled_at): PaymentDetailsResponse
-    {
+    public function setCanceledAt($canceled_at): PaymentDetailsResponse {
         $this->canceled_at = $canceled_at;
         return $this;
     }
@@ -299,17 +268,14 @@ class PaymentDetailsResponse
     /**
      * @return CardInfo
      */
-    public function getSelectedCardInfo()
-    {
+    public function getSelectedCardInfo() {
         return $this->selected_card_info;
     }
-
     /**
      * @param CardInfo $selected_card_info
      * @return PaymentDetailsResponse
      */
-    public function setSelectedCardInfo($selected_card_info): PaymentDetailsResponse
-    {
+    public function setSelectedCardInfo($selected_card_info): PaymentDetailsResponse {
         $this->selected_card_info = $selected_card_info;
         return $this;
     }
@@ -317,8 +283,7 @@ class PaymentDetailsResponse
     /**
      * @return mixed
      */
-    public function getPaymentActionDetails()
-    {
+    public function getPaymentActionDetails() {
         return $this->payment_action_details;
     }
 
@@ -326,8 +291,7 @@ class PaymentDetailsResponse
      * @param mixed $payment_action_details
      * @return PaymentDetailsResponse
      */
-    public function setPaymentActionDetails($payment_action_details): PaymentDetailsResponse
-    {
+    public function setPaymentActionDetails($payment_action_details): PaymentDetailsResponse {
         $this->payment_action_details = $payment_action_details;
         return $this;
     }

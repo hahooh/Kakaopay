@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class Amount
-{
+class Amount {
     private $total;
     private $tax_free;
     private $vat;
@@ -13,8 +12,7 @@ class Amount
     /**
      * @return mixed
      */
-    public function getPoint()
-    {
+    public function getPoint() {
         return $this->point;
     }
 
@@ -22,8 +20,7 @@ class Amount
      * @param int $point
      * @return Amount
      */
-    public function setPoint(int $point): Amount
-    {
+    public function setPoint(int $point): Amount {
         $this->point = $point;
         return $this;
     }
@@ -31,8 +28,7 @@ class Amount
     /**
      * @return mixed
      */
-    public function getTotal()
-    {
+    public function getTotal() {
         return $this->total;
     }
 
@@ -40,8 +36,7 @@ class Amount
      * @param mixed $total
      * @return Amount
      */
-    public function setTotal($total): Amount
-    {
+    public function setTotal($total): Amount {
         $this->total = $total;
         return $this;
     }
@@ -49,8 +44,7 @@ class Amount
     /**
      * @return mixed
      */
-    public function getTaxFree()
-    {
+    public function getTaxFree() {
         return $this->tax_free;
     }
 
@@ -58,8 +52,7 @@ class Amount
      * @param mixed $tax_free
      * @return Amount
      */
-    public function setTaxFree($tax_free): Amount
-    {
+    public function setTaxFree($tax_free): Amount {
         $this->tax_free = $tax_free;
         return $this;
     }
@@ -67,8 +60,7 @@ class Amount
     /**
      * @return mixed
      */
-    public function getVat()
-    {
+    public function getVat() {
         return $this->vat;
     }
 
@@ -76,8 +68,7 @@ class Amount
      * @param mixed $vat
      * @return Amount
      */
-    public function setVat($vat): Amount
-    {
+    public function setVat($vat): Amount {
         $this->vat = $vat;
         return $this;
     }
@@ -85,8 +76,7 @@ class Amount
     /**
      * @return mixed
      */
-    public function getDiscount()
-    {
+    public function getDiscount() {
         return $this->discount;
     }
 
@@ -94,8 +84,7 @@ class Amount
      * @param mixed $discount
      * @return Amount
      */
-    public function setDiscount($discount): Amount
-    {
+    public function setDiscount($discount): Amount {
         $this->discount = $discount;
         return $this;
     }

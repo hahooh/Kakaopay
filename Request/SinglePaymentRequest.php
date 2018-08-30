@@ -9,8 +9,7 @@ use KakaoPay\Client;
  * @package KakaoPay\Request
  * @method SinglePaymentRequest setCidSecret(string $cidSecret)
  */
-class SinglePaymentRequest extends BaseRequest
-{
+class SinglePaymentRequest extends BaseRequest {
     private $requestType;
     protected $partner_order_id;
     protected $partner_user_id;
@@ -28,8 +27,7 @@ class SinglePaymentRequest extends BaseRequest
     protected $install_month;
     protected $custom_json;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->setMethod('POST');
         $this->setEndPoint('https://kapi.kakao.com/v1/payment/ready');
         $this->requestType = Client::$RESPONSE_TYPE_SINGLE_PAYMENT;
@@ -39,8 +37,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $cidSecrete
      * @return SinglePaymentRequest
      */
-    public function setCidSecrete($cidSecrete): SinglePaymentRequest
-    {
+    public function setCidSecrete($cidSecrete): SinglePaymentRequest {
         $this->cidSecrete = $cidSecrete;
         return $this;
     }
@@ -48,8 +45,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPartnerOrderid()
-    {
+    public function getPartnerOrderId() {
         return $this->partner_order_id;
     }
 
@@ -57,8 +53,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $partner_order_id
      * @return SinglePaymentRequest
      */
-    public function setPartnerOrderid($partner_order_id): SinglePaymentRequest
-    {
+    public function setPartnerOrderId($partner_order_id): SinglePaymentRequest {
         $this->partner_order_id = $partner_order_id;
         return $this;
     }
@@ -66,8 +61,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPartnerUserid()
-    {
+    public function getPartnerUserId() {
         return $this->partner_user_id;
     }
 
@@ -75,8 +69,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $partner_user_id
      * @return SinglePaymentRequest
      */
-    public function setPartnerUserid($partner_user_id): SinglePaymentRequest
-    {
+    public function setPartnerUserId($partner_user_id): SinglePaymentRequest {
         $this->partner_user_id = $partner_user_id;
         return $this;
     }
@@ -84,8 +77,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getItemName()
-    {
+    public function getItemName() {
         return $this->item_name;
     }
 
@@ -93,8 +85,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $item_name
      * @return SinglePaymentRequest
      */
-    public function setItemName($item_name): SinglePaymentRequest
-    {
+    public function setItemName($item_name): SinglePaymentRequest {
         $this->item_name = $item_name;
         return $this;
     }
@@ -102,8 +93,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getItemCode()
-    {
+    public function getItemCode() {
         return $this->item_code;
     }
 
@@ -111,8 +101,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $item_code
      * @return SinglePaymentRequest
      */
-    public function setItemCode($item_code): SinglePaymentRequest
-    {
+    public function setItemCode($item_code): SinglePaymentRequest {
         $this->item_code = $item_code;
         return $this;
     }
@@ -120,8 +109,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getQuantity()
-    {
+    public function getQuantity() {
         return $this->quantity;
     }
 
@@ -129,8 +117,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $quantity
      * @return SinglePaymentRequest
      */
-    public function setQuantity($quantity): SinglePaymentRequest
-    {
+    public function setQuantity($quantity): SinglePaymentRequest {
         $this->quantity = $quantity;
         return $this;
     }
@@ -138,8 +125,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getTotalAmount()
-    {
+    public function getTotalAmount() {
         return $this->total_amount;
     }
 
@@ -147,8 +133,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $total_amount
      * @return SinglePaymentRequest
      */
-    public function setTotalAmount($total_amount): SinglePaymentRequest
-    {
+    public function setTotalAmount($total_amount): SinglePaymentRequest {
         $this->total_amount = $total_amount;
         return $this;
     }
@@ -156,8 +141,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getTaxFreeamount()
-    {
+    public function getTaxFreeAmount() {
         return $this->tax_free_amount;
     }
 
@@ -165,8 +149,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $tax_free_amount
      * @return SinglePaymentRequest
      */
-    public function setTaxFreeamount($tax_free_amount): SinglePaymentRequest
-    {
+    public function setTaxFreeAmount($tax_free_amount): SinglePaymentRequest {
         $this->tax_free_amount = $tax_free_amount;
         return $this;
     }
@@ -174,8 +157,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getVatAmount()
-    {
+    public function getVatAmount() {
         return $this->vat_amount;
     }
 
@@ -183,8 +165,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $vat_amount
      * @return SinglePaymentRequest
      */
-    public function setVatAmount($vat_amount): SinglePaymentRequest
-    {
+    public function setVatAmount($vat_amount): SinglePaymentRequest {
         $this->vat_amount = $vat_amount;
         return $this;
     }
@@ -192,8 +173,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getApprovalUrl()
-    {
+    public function getApprovalUrl() {
         return $this->approval_url;
     }
 
@@ -201,8 +181,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $approval_url
      * @return SinglePaymentRequest
      */
-    public function setApprovalUrl($approval_url): SinglePaymentRequest
-    {
+    public function setApprovalUrl($approval_url): SinglePaymentRequest {
         $this->approval_url = $approval_url;
         return $this;
     }
@@ -210,8 +189,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getCancelUrl()
-    {
+    public function getCancelUrl() {
         return $this->cancel_url;
     }
 
@@ -219,8 +197,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $cancel_url
      * @return SinglePaymentRequest
      */
-    public function setCancelUrl($cancel_url): SinglePaymentRequest
-    {
+    public function setCancelUrl($cancel_url): SinglePaymentRequest {
         $this->cancel_url = $cancel_url;
         return $this;
     }
@@ -228,8 +205,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getFailUrl()
-    {
+    public function getFailUrl() {
         return $this->fail_url;
     }
 
@@ -237,8 +213,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $fail_url
      * @return SinglePaymentRequest
      */
-    public function setFailUrl($fail_url): SinglePaymentRequest
-    {
+    public function setFailUrl($fail_url): SinglePaymentRequest {
         $this->fail_url = $fail_url;
         return $this;
     }
@@ -246,8 +221,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getAvailableCards()
-    {
+    public function getAvailableCards() {
         return $this->available_cards;
     }
 
@@ -255,8 +229,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $available_cards
      * @return SinglePaymentRequest
      */
-    public function setAvailableCards($available_cards): SinglePaymentRequest
-    {
+    public function setAvailableCards($available_cards): SinglePaymentRequest {
         $this->available_cards = $available_cards;
         return $this;
     }
@@ -264,8 +237,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPaymentMethodtype()
-    {
+    public function getPaymentMethodType() {
         return $this->payment_method_type;
     }
 
@@ -273,8 +245,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $payment_method_type
      * @return SinglePaymentRequest
      */
-    public function setPaymentMethodtype($payment_method_type): SinglePaymentRequest
-    {
+    public function setPaymentMethodType($payment_method_type): SinglePaymentRequest {
         $this->payment_method_type = $payment_method_type;
         return $this;
     }
@@ -282,8 +253,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getInstallMonth()
-    {
+    public function getInstallMonth() {
         return $this->install_month;
     }
 
@@ -291,8 +261,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $install_month
      * @return SinglePaymentRequest
      */
-    public function setInstallMonth($install_month): SinglePaymentRequest
-    {
+    public function setInstallMonth($install_month): SinglePaymentRequest {
         $this->install_month = $install_month;
         return $this;
     }
@@ -300,8 +269,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getCustomJson()
-    {
+    public function getCustomJson() {
         return $this->custom_json;
     }
 
@@ -309,8 +277,7 @@ class SinglePaymentRequest extends BaseRequest
      * @param mixed $custom_json
      * @return SinglePaymentRequest
      */
-    public function setCustomJson($custom_json): SinglePaymentRequest
-    {
+    public function setCustomJson($custom_json): SinglePaymentRequest {
         $this->custom_json = $custom_json;
         return $this;
     }
@@ -318,8 +285,7 @@ class SinglePaymentRequest extends BaseRequest
     /**
      * @return string
      */
-    public function getResponseType(): string
-    {
+    public function getResponseType(): string {
         return $this->requestType;
     }
 }

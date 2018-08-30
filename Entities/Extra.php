@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class Extra
-{
+class Extra {
     private $method_result_code;
     private $method_result_message;
 

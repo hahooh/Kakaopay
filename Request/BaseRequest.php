@@ -1,8 +1,7 @@
 <?php
 
 namespace KakaoPay\Request;
-abstract class BaseRequest implements \JsonSerializable
-{
+abstract class BaseRequest implements \JsonSerializable {
     protected $isTest;
     protected $method;
     protected $endPoint;
@@ -15,8 +14,7 @@ abstract class BaseRequest implements \JsonSerializable
     /**
      * @return mixed
      */
-    public function getCid()
-    {
+    public function getCid() {
         return $this->cid;
     }
 
@@ -24,8 +22,7 @@ abstract class BaseRequest implements \JsonSerializable
      * @param mixed $cid
      * @return BaseRequest
      */
-    public function setCid($cid): BaseRequest
-    {
+    public function setCid($cid): BaseRequest {
         $this->cid = $cid;
         return $this;
     }
@@ -33,8 +30,7 @@ abstract class BaseRequest implements \JsonSerializable
     /**
      * @return mixed
      */
-    public function getMethod()
-    {
+    public function getMethod() {
         return $this->method;
     }
 
@@ -42,8 +38,7 @@ abstract class BaseRequest implements \JsonSerializable
      * @param $method
      * @return $this
      */
-    protected function setMethod($method): BaseRequest
-    {
+    protected function setMethod($method): BaseRequest {
         $this->method = $method;
         return $this;
     }
@@ -51,8 +46,7 @@ abstract class BaseRequest implements \JsonSerializable
     /**
      * @return mixed
      */
-    public function getEndPoint()
-    {
+    public function getEndPoint() {
         return $this->endPoint;
     }
 
@@ -60,8 +54,7 @@ abstract class BaseRequest implements \JsonSerializable
      * @param $endPoint
      * @return $this
      */
-    protected function setEndPoint($endPoint): BaseRequest
-    {
+    protected function setEndPoint($endPoint): BaseRequest {
         $this->endPoint = $endPoint;
         return $this;
     }
@@ -69,8 +62,7 @@ abstract class BaseRequest implements \JsonSerializable
     /**
      * @return boolean
      */
-    public function getIsTest(): bool
-    {
+    public function getIsTest(): bool {
         return $this->isTest;
     }
 
@@ -78,8 +70,7 @@ abstract class BaseRequest implements \JsonSerializable
      * @param boolean $isTest
      * @return BaseRequest
      */
-    public function setIsTest(bool $isTest): BaseRequest
-    {
+    public function setIsTest(bool $isTest): BaseRequest {
         $this->isTest = $isTest;
         return $this;
     }
@@ -87,8 +78,7 @@ abstract class BaseRequest implements \JsonSerializable
     /**
      * @return mixed
      */
-    public function getAdminKey()
-    {
+    public function getAdminKey() {
         return $this->adminKey;
     }
 
@@ -96,8 +86,7 @@ abstract class BaseRequest implements \JsonSerializable
      * @param mixed $adminKey
      * @return BaseRequest
      */
-    public function setAdminKey($adminKey): BaseRequest
-    {
+    public function setAdminKey($adminKey): BaseRequest {
         $this->adminKey = $adminKey;
         return $this;
     }
@@ -105,8 +94,7 @@ abstract class BaseRequest implements \JsonSerializable
     /**
      * @return mixed
      */
-    public function getCidSecret()
-    {
+    public function getCidSecret() {
         return $this->cid_secret;
     }
 
@@ -114,8 +102,7 @@ abstract class BaseRequest implements \JsonSerializable
      * @param $cid_secret
      * @return $this
      */
-    public function setCidSecret($cid_secret): BaseRequest
-    {
+    public function setCidSecret($cid_secret): BaseRequest {
         $this->cid_secret = $cid_secret;
         return $this;
     }
@@ -127,9 +114,7 @@ abstract class BaseRequest implements \JsonSerializable
      * which is a value of any type other than a resource.
      * @since 5.4.0
      */
-    public function jsonSerialize()
-    {
-        // TODO: Implement jsonSerialize() method.
+    public function jsonSerialize() {
         $vars = get_object_vars($this);
 
         foreach ($vars as $index => $var) {

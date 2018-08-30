@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class Page
-{
+class Page {
     private $current_page;
     private $total_pages;
     private $current_size;

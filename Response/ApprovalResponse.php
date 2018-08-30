@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Response;
 
-class ApprovalResponse
-{
+class ApprovalResponse {
     protected $aid;
     protected $tid;
     protected $cid;
@@ -23,8 +22,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getAid()
-    {
+    public function getAid() {
         return $this->aid;
     }
 
@@ -32,8 +30,7 @@ class ApprovalResponse
      * @param mixed $aid
      * @return ApprovalResponse
      */
-    public function setAid($aid): ApprovalResponse
-    {
+    public function setAid($aid): ApprovalResponse {
         $this->aid = $aid;
         return $this;
     }
@@ -41,8 +38,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getTid()
-    {
+    public function getTid() {
         return $this->tid;
     }
 
@@ -50,8 +46,7 @@ class ApprovalResponse
      * @param mixed $tid
      * @return ApprovalResponse
      */
-    public function setTid($tid): ApprovalResponse
-    {
+    public function setTid($tid): ApprovalResponse {
         $this->tid = $tid;
         return $this;
     }
@@ -59,8 +54,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getCid()
-    {
+    public function getCid() {
         return $this->cid;
     }
 
@@ -68,8 +62,7 @@ class ApprovalResponse
      * @param mixed $cid
      * @return ApprovalResponse
      */
-    public function setCid($cid): ApprovalResponse
-    {
+    public function setCid($cid): ApprovalResponse {
         $this->cid = $cid;
         return $this;
     }
@@ -77,8 +70,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getSid()
-    {
+    public function getSid() {
         return $this->sid;
     }
 
@@ -86,8 +78,7 @@ class ApprovalResponse
      * @param mixed $sid
      * @return ApprovalResponse
      */
-    public function setSid($sid): ApprovalResponse
-    {
+    public function setSid($sid): ApprovalResponse {
         $this->sid = $sid;
         return $this;
     }
@@ -95,8 +86,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getPartnerOrderId()
-    {
+    public function getPartnerOrderId() {
         return $this->partner_order_id;
     }
 
@@ -104,8 +94,7 @@ class ApprovalResponse
      * @param mixed $partner_order_id
      * @return ApprovalResponse
      */
-    public function setPartnerOrderId($partner_order_id): ApprovalResponse
-    {
+    public function setPartnerOrderId($partner_order_id): ApprovalResponse {
         $this->partner_order_id = $partner_order_id;
         return $this;
     }
@@ -113,8 +102,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getPartnerUserId()
-    {
+    public function getPartnerUserId() {
         return $this->partner_user_id;
     }
 
@@ -122,8 +110,7 @@ class ApprovalResponse
      * @param mixed $partner_user_id
      * @return ApprovalResponse
      */
-    public function setPartnerUserId($partner_user_id): ApprovalResponse
-    {
+    public function setPartnerUserId($partner_user_id): ApprovalResponse {
         $this->partner_user_id = $partner_user_id;
         return $this;
     }
@@ -131,8 +118,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getPaymentMethodType()
-    {
+    public function getPaymentMethodType() {
         return $this->payment_method_type;
     }
 
@@ -140,8 +126,7 @@ class ApprovalResponse
      * @param mixed $payment_method_type
      * @return ApprovalResponse
      */
-    public function setPaymentMethodType($payment_method_type): ApprovalResponse
-    {
+    public function setPaymentMethodType($payment_method_type): ApprovalResponse {
         $this->payment_method_type = $payment_method_type;
         return $this;
     }
@@ -149,8 +134,7 @@ class ApprovalResponse
     /**
      * @return \KakaoPay\Entities\Amount
      */
-    public function getAmount()
-    {
+    public function getAmount() {
         return $this->amount;
     }
 
@@ -158,8 +142,7 @@ class ApprovalResponse
      * @param \KakaoPay\Entities\Amount $amount
      * @return ApprovalResponse
      */
-    public function setAmount($amount): ApprovalResponse
-    {
+    public function setAmount($amount): ApprovalResponse {
         $this->amount = $amount;
         return $this;
     }
@@ -167,8 +150,7 @@ class ApprovalResponse
     /**
      * @return \KakaoPay\Entities\CardInfo
      */
-    public function getCardInfo()
-    {
+    public function getCardInfo() {
         return $this->card_info;
     }
 
@@ -176,8 +158,7 @@ class ApprovalResponse
      * @param \KakaoPay\Entities\CardInfo $card_info
      * @return ApprovalResponse
      */
-    public function setCardInfo($card_info): ApprovalResponse
-    {
+    public function setCardInfo($card_info): ApprovalResponse {
         $this->card_info = $card_info;
         return $this;
     }
@@ -185,8 +166,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getItemName()
-    {
+    public function getItemName() {
         return $this->item_name;
     }
 
@@ -194,8 +174,7 @@ class ApprovalResponse
      * @param mixed $item_name
      * @return ApprovalResponse
      */
-    public function setItemName($item_name): ApprovalResponse
-    {
+    public function setItemName($item_name): ApprovalResponse {
         $this->item_name = $item_name;
         return $this;
     }
@@ -203,8 +182,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getItemCode()
-    {
+    public function getItemCode() {
         return $this->item_code;
     }
 
@@ -212,8 +190,7 @@ class ApprovalResponse
      * @param mixed $item_code
      * @return ApprovalResponse
      */
-    public function setItemCode($item_code): ApprovalResponse
-    {
+    public function setItemCode($item_code): ApprovalResponse {
         $this->item_code = $item_code;
         return $this;
     }
@@ -221,8 +198,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getQuantity()
-    {
+    public function getQuantity() {
         return $this->quantity;
     }
 
@@ -230,8 +206,7 @@ class ApprovalResponse
      * @param mixed $quantity
      * @return ApprovalResponse
      */
-    public function setQuantity($quantity): ApprovalResponse
-    {
+    public function setQuantity($quantity): ApprovalResponse {
         $this->quantity = $quantity;
         return $this;
     }
@@ -239,8 +214,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getCreatedAt()
-    {
+    public function getCreatedAt() {
         return $this->created_at;
     }
 
@@ -248,8 +222,7 @@ class ApprovalResponse
      * @param mixed $created_at
      * @return ApprovalResponse
      */
-    public function setCreatedAt($created_at): ApprovalResponse
-    {
+    public function setCreatedAt($created_at): ApprovalResponse {
         $this->created_at = $created_at;
         return $this;
     }
@@ -257,8 +230,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getApprovedAt()
-    {
+    public function getApprovedAt() {
         return $this->approved_at;
     }
 
@@ -266,8 +238,7 @@ class ApprovalResponse
      * @param mixed $approved_at
      * @return ApprovalResponse
      */
-    public function setApprovedAt($approved_at): ApprovalResponse
-    {
+    public function setApprovedAt($approved_at): ApprovalResponse {
         $this->approved_at = $approved_at;
         return $this;
     }
@@ -275,8 +246,7 @@ class ApprovalResponse
     /**
      * @return mixed
      */
-    public function getPayload()
-    {
+    public function getPayload() {
         return $this->payload;
     }
 
@@ -284,8 +254,7 @@ class ApprovalResponse
      * @param mixed $payload
      * @return ApprovalResponse
      */
-    public function setPayload($payload): ApprovalResponse
-    {
+    public function setPayload($payload): ApprovalResponse {
         $this->payload = $payload;
         return $this;
     }

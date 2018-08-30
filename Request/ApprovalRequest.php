@@ -9,8 +9,7 @@ use KakaoPay\Client;
  * @package KakaoPay\Request
  * @method ApprovalRequest setCidSecret(string $cidSecret)
  */
-class ApprovalRequest extends BaseRequest
-{
+class ApprovalRequest extends BaseRequest {
     private $requestType;
     protected $tid;
     protected $partner_order_id;
@@ -19,8 +18,7 @@ class ApprovalRequest extends BaseRequest
     protected $payload;
     protected $total_amount;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->setMethod('POST');
         $this->setEndPoint('https://kapi.kakao.com/v1/payment/approve');
         $this->requestType = Client::$RESPONSE_TYPE_APPROVAL;

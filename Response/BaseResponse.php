@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Response;
 
-class BaseResponse implements \JsonSerializable
-{
+class BaseResponse implements \JsonSerializable {
 
     /**
      * Specify data which should be serialized to JSON
@@ -12,8 +11,7 @@ class BaseResponse implements \JsonSerializable
      * which is a value of any type other than a resource.
      * @since 5.4.0
      */
-    public function jsonSerialize()
-    {
+    public function jsonSerialize() {
         // TODO: Implement jsonSerialize() method.
         return get_object_vars($this);
     }

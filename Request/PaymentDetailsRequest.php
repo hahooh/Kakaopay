@@ -23,7 +23,7 @@ class PaymentDetailsRequest extends BaseRequest {
      * @param mixed $tid
      * @return PaymentDetailsRequest
      */
-    public function setTid($tid): PaymentDetailsRequest{
+    public function setTid($tid): PaymentDetailsRequest {
         $this->tid = $tid;
         return $this;
     }

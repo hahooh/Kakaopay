@@ -17,8 +17,7 @@ use KakaoPay\Response\GetPaymentsResponse;
 use KakaoPay\Response\PaymentDetailsResponse;
 use KakaoPay\Response\SinglePaymentResponse;
 
-class Client
-{
+class Client {
     public static $RESPONSE_TYPE_SINGLE_PAYMENT = SinglePaymentResponse::class;
     public static $RESPONSE_TYPE_APPROVAL = ApprovalResponse::class;
     public static $RESPONSE_TYPE_FAIL = FailedResponse::class;
@@ -31,8 +30,7 @@ class Client
     private $accessToken;
     private $adminKey;
 
-    public function __construct(BaseRequest $request = null, string $accessToken = null)
-    {
+    public function __construct(BaseRequest $request = null, string $accessToken = null) {
         $this->request = $request;
         $this->accessToken = $accessToken;
     }
@@ -43,8 +41,7 @@ class Client
      * @throws GuzzleException
      * @throws \JsonMapper_Exception
      */
-    public function execute($contentType = null)
-    {
+    public function execute($contentType = null) {
         $client = new \GuzzleHttp\Client();
 
         try {
@@ -68,8 +65,7 @@ class Client
      * @return object
      * @throws \JsonMapper_Exception
      */
-    private function map_response(string $responseType, $jsonObject)
-    {
+    private function map_response(string $responseType, $jsonObject) {
         $jsonMapper = new \JsonMapper();
 
         switch ($responseType) {
@@ -93,8 +89,7 @@ class Client
      * @return object
      * @throws \JsonMapper_Exception
      */
-    private function get_cancel_payment_response(JsonMapper $jsonMapper, $jsonObject)
-    {
+    private function get_cancel_payment_response(JsonMapper $jsonMapper, $jsonObject) {
         $jsonObject->amount = $jsonMapper->map($jsonObject->amount, new Amount());
         $jsonObject->canceled_amount = $jsonMapper->map($jsonObject->canceled_amount, new Amount());
         $jsonObject->cancel_available_amount = $jsonMapper->map($jsonObject->cancel_available_amount, new Amount());
@@ -107,8 +102,7 @@ class Client
      * @return object
      * @throws \JsonMapper_Exception
      */
-    private function get_failed_response(JsonMapper $jsonMapper, $jsonObject)
-    {
+    private function get_failed_response(JsonMapper $jsonMapper, $jsonObject) {
         if (isset($jsonObject->extras)) {
             $jsonObject->extras = $jsonMapper->map($jsonObject->extras, new Extra());
         } else {
@@ -123,8 +117,7 @@ class Client
      * @return object
      * @throws \JsonMapper_Exception
      */
-    private function get_approval_response(JsonMapper $jsonMapper, $jsonObject)
-    {
+    private function get_approval_response(JsonMapper $jsonMapper, $jsonObject) {
         $amount = $jsonMapper->map($jsonObject->amount, new Amount());
         if (isset($jsonObject->card_info)) {
             $cardInfo = $jsonMapper->map($jsonObject->card_info, new CardInfo());
@@ -139,8 +132,7 @@ class Client
     /**
      * @return array
      */
-    private function get_headers()
-    {
+    private function get_headers() {
         $auth = $this->adminKey;
         return [
             'Authorization' => 'KakaoAK ' . $auth,
@@ -151,8 +143,7 @@ class Client
     /**
      * @return string
      */
-    public function getAccessToken(): string
-    {
+    public function getAccessToken(): string {
         return $this->accessToken;
     }
 
@@ -160,8 +151,7 @@ class Client
      * @param string $accessToken
      * @return $this
      */
-    public function setAccessToken(string $accessToken)
-    {
+    public function setAccessToken(string $accessToken) {
         $this->accessToken = $accessToken;
         return $this;
     }
@@ -169,8 +159,7 @@ class Client
     /**
      * @return mixed
      */
-    public function getContentType()
-    {
+    public function getContentType() {
         return $this->contentType;
     }
 
@@ -178,8 +167,7 @@ class Client
      * @param mixed $contentType
      * @return Client
      */
-    public function setContentType($contentType): Client
-    {
+    public function setContentType($contentType): Client {
         $this->contentType = $contentType;
         return $this;
     }
@@ -187,8 +175,7 @@ class Client
     /**
      * @return BaseRequest
      */
-    public function getRequest(): BaseRequest
-    {
+    public function getRequest(): BaseRequest {
         return $this->request;
     }
 
@@ -196,8 +183,7 @@ class Client
      * @param BaseRequest $request
      * @return Client
      */
-    public function setRequest(BaseRequest $request): Client
-    {
+    public function setRequest(BaseRequest $request): Client {
         $this->request = $request;
         return $this;
     }
@@ -205,8 +191,7 @@ class Client
     /**
      * @return mixed
      */
-    public function getAdminKey()
-    {
+    public function getAdminKey() {
         return $this->adminKey;
     }
 
@@ -214,8 +199,7 @@ class Client
      * @param mixed $adminKey
      * @return Client
      */
-    public function setAdminKey($adminKey): Client
-    {
+    public function setAdminKey($adminKey): Client {
         $this->adminKey = $adminKey;
         return $this;
     }

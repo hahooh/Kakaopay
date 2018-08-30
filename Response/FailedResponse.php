@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Response;
 
-class FailedResponse extends BaseResponse
-{
+class FailedResponse extends BaseResponse {
     protected $code;
     protected $msg;
     /**
@@ -14,8 +13,7 @@ class FailedResponse extends BaseResponse
     /**
      * @return mixed
      */
-    public function getCode()
-    {
+    public function getCode() {
         return $this->code;
     }
 
@@ -23,8 +21,7 @@ class FailedResponse extends BaseResponse
      * @param mixed $code
      * @return FailedResponse
      */
-    public function setCode($code): FailedResponse
-    {
+    public function setCode($code): FailedResponse {
         $this->code = $code;
         return $this;
     }
@@ -32,8 +29,7 @@ class FailedResponse extends BaseResponse
     /**
      * @return mixed
      */
-    public function getMsg()
-    {
+    public function getMsg() {
         return $this->msg;
     }
 
@@ -41,8 +37,7 @@ class FailedResponse extends BaseResponse
      * @param mixed $msg
      * @return FailedResponse
      */
-    public function setMsg($msg): FailedResponse
-    {
+    public function setMsg($msg): FailedResponse {
         $this->msg = $msg;
         return $this;
     }
@@ -50,8 +45,7 @@ class FailedResponse extends BaseResponse
     /**
      * @return \KakaoPay\Entities\Extra
      */
-    public function getExtra()
-    {
+    public function getExtra() {
         return $this->extra;
     }
 
@@ -59,8 +53,7 @@ class FailedResponse extends BaseResponse
      * @param \KakaoPay\Entities\Extra $extra
      * @return FailedResponse
      */
-    public function setExtra($extra): FailedResponse
-    {
+    public function setExtra($extra): FailedResponse {
         $this->extra = $extra;
         return $this;
     }

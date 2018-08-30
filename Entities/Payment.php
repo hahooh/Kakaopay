@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class Payment
-{
+class Payment {
     public static $PAYMENT_TYPE_CARD = 'CARD';
     public static $PAYMENT_TYPE_MONEY = 'MONEY';
 

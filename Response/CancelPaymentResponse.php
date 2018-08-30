@@ -1,8 +1,7 @@
 <?php
 
 namespace KakaoPay\Response;
-class CancelPaymentResponse
-{
+class CancelPaymentResponse {
     protected $aid;
     protected $tid;
     protected $cid;
@@ -27,8 +26,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getAid()
-    {
+    public function getAid() {
         return $this->aid;
     }
 
@@ -36,8 +34,7 @@ class CancelPaymentResponse
      * @param mixed $aid
      * @return CancelPaymentResponse
      */
-    public function setAid($aid): CancelPaymentResponse
-    {
+    public function setAid($aid): CancelPaymentResponse {
         $this->aid = $aid;
         return $this;
     }
@@ -45,8 +42,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getTid()
-    {
+    public function getTid() {
         return $this->tid;
     }
 
@@ -54,8 +50,7 @@ class CancelPaymentResponse
      * @param mixed $tid
      * @return CancelPaymentResponse
      */
-    public function setTid($tid): CancelPaymentResponse
-    {
+    public function setTid($tid): CancelPaymentResponse {
         $this->tid = $tid;
         return $this;
     }
@@ -63,8 +58,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getCid()
-    {
+    public function getCid() {
         return $this->cid;
     }
 
@@ -72,8 +66,7 @@ class CancelPaymentResponse
      * @param mixed $cid
      * @return CancelPaymentResponse
      */
-    public function setCid($cid): CancelPaymentResponse
-    {
+    public function setCid($cid): CancelPaymentResponse {
         $this->cid = $cid;
         return $this;
     }
@@ -81,8 +74,7 @@ class CancelPaymentResponse
     /**
      * @return string
      */
-    public function getStatus()
-    {
+    public function getStatus() {
         return $this->status->getStatus();
     }
 
@@ -90,8 +82,7 @@ class CancelPaymentResponse
      * @param string $status
      * @return CancelPaymentResponse
      */
-    public function setStatus($status): CancelPaymentResponse
-    {
+    public function setStatus($status): CancelPaymentResponse {
         $this->status = new \KakaoPay\Entities\Status($status);
         return $this;
     }
@@ -99,8 +90,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getPartnerOrderId()
-    {
+    public function getPartnerOrderId() {
         return $this->partner_order_id;
     }
 
@@ -108,8 +98,7 @@ class CancelPaymentResponse
      * @param mixed $partner_order_id
      * @return CancelPaymentResponse
      */
-    public function setPartnerOrderId($partner_order_id): CancelPaymentResponse
-    {
+    public function setPartnerOrderId($partner_order_id): CancelPaymentResponse {
         $this->partner_order_id = $partner_order_id;
         return $this;
     }
@@ -117,8 +106,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getPartnerUserId()
-    {
+    public function getPartnerUserId() {
         return $this->partner_user_id;
     }
 
@@ -126,8 +114,7 @@ class CancelPaymentResponse
      * @param mixed $partner_user_id
      * @return CancelPaymentResponse
      */
-    public function setPartnerUserId($partner_user_id): CancelPaymentResponse
-    {
+    public function setPartnerUserId($partner_user_id): CancelPaymentResponse {
         $this->partner_user_id = $partner_user_id;
         return $this;
     }
@@ -135,8 +122,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getPaymentMethodType()
-    {
+    public function getPaymentMethodType() {
         return $this->payment_method_type;
     }
 
@@ -144,8 +130,7 @@ class CancelPaymentResponse
      * @param mixed $payment_method_type
      * @return CancelPaymentResponse
      */
-    public function setPaymentMethodType($payment_method_type): CancelPaymentResponse
-    {
+    public function setPaymentMethodType($payment_method_type): CancelPaymentResponse {
         $this->payment_method_type = $payment_method_type;
         return $this;
     }
@@ -153,8 +138,7 @@ class CancelPaymentResponse
     /**
      * @return \KakaoPay\Entities\Amount
      */
-    public function getAmount()
-    {
+    public function getAmount() {
         return $this->amount;
     }
 
@@ -162,8 +146,7 @@ class CancelPaymentResponse
      * @param \KakaoPay\Entities\Amount $amount
      * @return CancelPaymentResponse
      */
-    public function setAmount($amount): CancelPaymentResponse
-    {
+    public function setAmount($amount): CancelPaymentResponse {
         $this->amount = $amount;
         return $this;
     }
@@ -171,8 +154,7 @@ class CancelPaymentResponse
     /**
      * @return \KakaoPay\Entities\Amount
      */
-    public function getCanceledAmount()
-    {
+    public function getCanceledAmount() {
         return $this->canceled_amount;
     }
 
@@ -180,8 +162,7 @@ class CancelPaymentResponse
      * @param \KakaoPay\Entities\Amount $canceled_amount
      * @return CancelPaymentResponse
      */
-    public function setCanceledAmount($canceled_amount): CancelPaymentResponse
-    {
+    public function setCanceledAmount($canceled_amount): CancelPaymentResponse {
         $this->canceled_amount = $canceled_amount;
         return $this;
     }
@@ -189,8 +170,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getItemName()
-    {
+    public function getItemName() {
         return $this->item_name;
     }
 
@@ -198,8 +178,7 @@ class CancelPaymentResponse
      * @param mixed $item_name
      * @return CancelPaymentResponse
      */
-    public function setItemName($item_name): CancelPaymentResponse
-    {
+    public function setItemName($item_name): CancelPaymentResponse {
         $this->item_name = $item_name;
         return $this;
     }
@@ -207,8 +186,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getItemCode()
-    {
+    public function getItemCode() {
         return $this->item_code;
     }
 
@@ -216,8 +194,7 @@ class CancelPaymentResponse
      * @param mixed $item_code
      * @return CancelPaymentResponse
      */
-    public function setItemCode($item_code): CancelPaymentResponse
-    {
+    public function setItemCode($item_code): CancelPaymentResponse {
         $this->item_code = $item_code;
         return $this;
     }
@@ -225,8 +202,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getQuantity()
-    {
+    public function getQuantity() {
         return $this->quantity;
     }
 
@@ -234,8 +210,7 @@ class CancelPaymentResponse
      * @param mixed $quantity
      * @return CancelPaymentResponse
      */
-    public function setQuantity($quantity): CancelPaymentResponse
-    {
+    public function setQuantity($quantity): CancelPaymentResponse {
         $this->quantity = $quantity;
         return $this;
     }
@@ -243,8 +218,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getCreatedAt()
-    {
+    public function getCreatedAt() {
         return $this->created_at;
     }
 
@@ -252,8 +226,7 @@ class CancelPaymentResponse
      * @param mixed $created_at
      * @return CancelPaymentResponse
      */
-    public function setCreatedAt($created_at): CancelPaymentResponse
-    {
+    public function setCreatedAt($created_at): CancelPaymentResponse {
         $this->created_at = $created_at;
         return $this;
     }
@@ -261,8 +234,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getApprovedAt()
-    {
+    public function getApprovedAt() {
         return $this->approved_at;
     }
 
@@ -270,8 +242,7 @@ class CancelPaymentResponse
      * @param mixed $approved_at
      * @return CancelPaymentResponse
      */
-    public function setApprovedAt($approved_at): CancelPaymentResponse
-    {
+    public function setApprovedAt($approved_at): CancelPaymentResponse {
         $this->approved_at = $approved_at;
         return $this;
     }
@@ -279,8 +250,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getCanceledAt()
-    {
+    public function getCanceledAt() {
         return $this->canceled_at;
     }
 
@@ -288,8 +258,7 @@ class CancelPaymentResponse
      * @param mixed $canceled_at
      * @return CancelPaymentResponse
      */
-    public function setCanceledAt($canceled_at): CancelPaymentResponse
-    {
+    public function setCanceledAt($canceled_at): CancelPaymentResponse {
         $this->canceled_at = $canceled_at;
         return $this;
     }
@@ -297,8 +266,7 @@ class CancelPaymentResponse
     /**
      * @return mixed
      */
-    public function getPayload()
-    {
+    public function getPayload() {
         return $this->payload;
     }
 
@@ -306,8 +274,7 @@ class CancelPaymentResponse
      * @param mixed $payload
      * @return CancelPaymentResponse
      */
-    public function setPayload($payload): CancelPaymentResponse
-    {
+    public function setPayload($payload): CancelPaymentResponse {
         $this->payload = $payload;
         return $this;
     }
@@ -315,8 +282,7 @@ class CancelPaymentResponse
     /**
      * @return \KakaoPay\Entities\Amount
      */
-    public function getCanceledAvailableAmount()
-    {
+    public function getCanceledAvailableAmount() {
         return $this->canceled_available_amount;
     }
 
@@ -324,8 +290,7 @@ class CancelPaymentResponse
      * @param \KakaoPay\Entities\Amount $canceled_available_amount
      * @return $this
      */
-    public function setCanceledAvailableAmount($canceled_available_amount): CancelPaymentResponse
-    {
+    public function setCanceledAvailableAmount($canceled_available_amount): CancelPaymentResponse {
         $this->canceled_available_amount = $canceled_available_amount;
         return $this;
     }

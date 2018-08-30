@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class Status
-{
+class Status {
     public static $PAYMENT_STATUS_READY = 'READY';
     public static $PAYMENT_STATUS_SEND_TMS = 'SEND_TMS';
     public static $PAYMENT_STATUS_OPEN_PAYMENT = 'OPEN_PAYMENT';

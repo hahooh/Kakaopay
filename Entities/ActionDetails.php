@@ -2,8 +2,7 @@
 
 namespace KakaoPay\Entities;
 
-class ActionDetails
-{
+class ActionDetails {
     private $aid;
     private $approval_at;
     private $amount;
@@ -15,8 +14,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getAid()
-    {
+    public function getAid() {
         return $this->aid;
     }
 
@@ -24,8 +22,7 @@ class ActionDetails
      * @param mixed $aid
      * @return ActionDetails
      */
-    public function setAid($aid): ActionDetails
-    {
+    public function setAid($aid): ActionDetails {
         $this->aid = $aid;
         return $this;
     }
@@ -33,8 +30,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getApprovalAt()
-    {
+    public function getApprovalAt() {
         return $this->approval_at;
     }
 
@@ -42,8 +38,7 @@ class ActionDetails
      * @param mixed $approval_at
      * @return ActionDetails
      */
-    public function setApprovalAt($approval_at): ActionDetails
-    {
+    public function setApprovalAt($approval_at): ActionDetails {
         $this->approval_at = $approval_at;
         return $this;
     }
@@ -51,8 +46,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getAmount()
-    {
+    public function getAmount() {
         return $this->amount;
     }
 
@@ -60,8 +54,7 @@ class ActionDetails
      * @param mixed $amount
      * @return ActionDetails
      */
-    public function setAmount($amount): ActionDetails
-    {
+    public function setAmount($amount): ActionDetails {
         $this->amount = $amount;
         return $this;
     }
@@ -69,8 +62,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getPointAmount()
-    {
+    public function getPointAmount() {
         return $this->point_amount;
     }
 
@@ -78,8 +70,7 @@ class ActionDetails
      * @param mixed $point_amount
      * @return ActionDetails
      */
-    public function setPointAmount($point_amount): ActionDetails
-    {
+    public function setPointAmount($point_amount): ActionDetails {
         $this->point_amount = $point_amount;
         return $this;
     }
@@ -87,8 +78,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getDiscountAmount()
-    {
+    public function getDiscountAmount() {
         return $this->discount_amount;
     }
 
@@ -96,8 +86,7 @@ class ActionDetails
      * @param mixed $discount_amount
      * @return ActionDetails
      */
-    public function setDiscountAmount($discount_amount): ActionDetails
-    {
+    public function setDiscountAmount($discount_amount): ActionDetails {
         $this->discount_amount = $discount_amount;
         return $this;
     }
@@ -105,8 +94,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getPaymentActionType()
-    {
+    public function getPaymentActionType() {
         return $this->payment_action_type;
     }
 
@@ -114,8 +102,7 @@ class ActionDetails
      * @param mixed $payment_action_type
      * @return ActionDetails
      */
-    public function setPaymentActionType($payment_action_type): ActionDetails
-    {
+    public function setPaymentActionType($payment_action_type): ActionDetails {
         $this->payment_action_type = $payment_action_type;
         return $this;
     }
@@ -123,8 +110,7 @@ class ActionDetails
     /**
      * @return mixed
      */
-    public function getPayload()
-    {
+    public function getPayload() {
         return $this->payload;
     }
 
@@ -132,8 +118,7 @@ class ActionDetails
      * @param mixed $payload
      * @return ActionDetails
      */
-    public function setPayload($payload): ActionDetails
-    {
+    public function setPayload($payload): ActionDetails {
         $this->payload = $payload;
         return $this;
     }

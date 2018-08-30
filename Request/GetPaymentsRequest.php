@@ -4,8 +4,7 @@ namespace KakaoPay\Request;
 
 use KakaoPay\Client;
 
-class GetPaymentsRequest extends BaseRequest
-{
+class GetPaymentsRequest extends BaseRequest {
     private $requestType;
     private $payment_request_date;
     private $tid;
@@ -13,8 +12,7 @@ class GetPaymentsRequest extends BaseRequest
     private $partner_user_id;
     private $page;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->setMethod('GET');
         $this->requestType = Client::$RESPONSE_TYPE_GET_PAYMENTS;
     }
@@ -22,8 +20,7 @@ class GetPaymentsRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPaymentRequestDate()
-    {
+    public function getPaymentRequestDate() {
         return $this->payment_request_date;
     }
 
@@ -31,8 +28,7 @@ class GetPaymentsRequest extends BaseRequest
      * @param mixed $payment_request_date
      * @return GetPaymentsRequest
      */
-    public function setPaymentRequestDate($payment_request_date): GetPaymentsRequest
-    {
+    public function setPaymentRequestDate($payment_request_date): GetPaymentsRequest {
         $this->payment_request_date = $payment_request_date;
         return $this;
     }
@@ -40,8 +36,7 @@ class GetPaymentsRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getTid()
-    {
+    public function getTid() {
         return $this->tid;
     }
 
@@ -49,8 +44,7 @@ class GetPaymentsRequest extends BaseRequest
      * @param mixed $tid
      * @return GetPaymentsRequest
      */
-    public function setTid($tid): GetPaymentsRequest
-    {
+    public function setTid($tid): GetPaymentsRequest {
         $this->tid = $tid;
         return $this;
     }
@@ -58,8 +52,7 @@ class GetPaymentsRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPartnerOrderId()
-    {
+    public function getPartnerOrderId() {
         return $this->partner_order_id;
     }
 
@@ -67,8 +60,7 @@ class GetPaymentsRequest extends BaseRequest
      * @param mixed $partner_order_id
      * @return GetPaymentsRequest
      */
-    public function setPartnerOrderId($partner_order_id): GetPaymentsRequest
-    {
+    public function setPartnerOrderId($partner_order_id): GetPaymentsRequest {
         $this->partner_order_id = $partner_order_id;
         return $this;
     }
@@ -76,8 +68,7 @@ class GetPaymentsRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPartnerUserId()
-    {
+    public function getPartnerUserId() {
         return $this->partner_user_id;
     }
 
@@ -85,8 +76,7 @@ class GetPaymentsRequest extends BaseRequest
      * @param mixed $partner_user_id
      * @return GetPaymentsRequest
      */
-    public function setPartnerUserId($partner_user_id): GetPaymentsRequest
-    {
+    public function setPartnerUserId($partner_user_id): GetPaymentsRequest {
         $this->partner_user_id = $partner_user_id;
         return $this;
     }
@@ -94,8 +84,7 @@ class GetPaymentsRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getPage()
-    {
+    public function getPage() {
         return $this->page;
     }
 
@@ -103,8 +92,7 @@ class GetPaymentsRequest extends BaseRequest
      * @param mixed $page
      * @return GetPaymentsRequest
      */
-    public function setPage($page): GetPaymentsRequest
-    {
+    public function setPage($page): GetPaymentsRequest {
         $this->page = $page;
         return $this;
     }
@@ -112,8 +100,7 @@ class GetPaymentsRequest extends BaseRequest
     /**
      * @return mixed
      */
-    public function getResponseType(): string
-    {
+    public function getResponseType(): string {
         return $this->requestType;
     }
 }
