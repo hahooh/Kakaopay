@@ -1,8 +1,10 @@
-#Kakaopay SDK for php
+###Kakaopay SDK for php
 
-Its not DONE YET.
+It run on PHP 7 or above.
 
-- Functions that are working
+It is not for every payment method that Kakaopay offers.
+
+- This SDK is containing
     * Requesting (ready) single payment
     * Canceling single payment
-    * Approval single payment
+    * Approval of single payment
