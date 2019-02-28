@@ -1,8 +1,6 @@
 ###Kakaopay SDK for php
 
-It run on PHP 7 or above.
-
-It is not for every payment method that Kakaopay offers.
+It runs on PHP 7 or above.
 
 - This SDK is containing
     * Requesting (ready) single payment
